@@ -1,0 +1,38 @@
+package fallstudieGreg.git.first;
+
+public class Brauerei extends Standort {
+
+	private int kapazität;
+	private int kosten;
+	private Spieler spieler;
+	
+	public Brauerei(int kapazität, int kosten, int pos_x, int pos_y, String name, Spieler spieler){
+		super(pos_x, pos_y, name);
+		this.kapazität = kapazität;
+		this.kosten = kosten;
+		this.spieler = spieler;
+	}
+
+	public void herstellen(int menge){
+		spieler.einlagern(kapazität, "Bier");
+		spieler.einlagern(-kosten, "Rohstoffe");		
+	}
+	
+	public int getKapazität() {
+		return kapazität;
+	}
+
+	public void setKapazität(int kapazität) {
+		this.kapazität = kapazität;
+	}
+
+	public float getKosten() {
+		return kosten;
+	}
+
+	public void setKosten(float kosten) {
+		this.kosten = kosten;
+	}
+	
+	
+}
