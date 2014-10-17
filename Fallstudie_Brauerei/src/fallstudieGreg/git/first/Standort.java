@@ -2,14 +2,18 @@ package fallstudieGreg.git.first;
 
 public class Standort {
 	
-	private int pox_x;
-	private int pos_y;
-	private String name;
-		
-		public Standort(int pox_x, int pox_y, String name){
+	protected int pox_x;
+	protected int pos_y;
+	protected String name;
+	protected Spieler besitzer;
+	protected Spieler[] spieler;
+	
+		public Standort(int pox_x, int pox_y, String name, Spieler besitzer, Spieler[] spieler){
 			this.pos_y = pos_y;
 			this.pox_x = pox_x;
 			this.name = name;
+			this.besitzer = besitzer;
+			this.spieler = spieler;
 		}
 
 		public int getPox_x() {

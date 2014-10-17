@@ -6,11 +6,11 @@ public class Brauerei extends Standort {
 	private int kosten;
 	private Spieler spieler;
 	
-	public Brauerei(int kapazität, int kosten, int pos_x, int pos_y, String name, Spieler spieler){
-		super(pos_x, pos_y, name);
+	public Brauerei(int kapazität, int kosten, int pos_x, int pos_y, String name, Spieler besitzer, Spieler[] spieler){
+		super(pos_x, pos_y, name, besitzer, spieler);
 		this.kapazität = kapazität;
 		this.kosten = kosten;
-		this.spieler = spieler;
+		this.spieler = besitzer;
 	}
 
 	public void herstellen(int menge){
