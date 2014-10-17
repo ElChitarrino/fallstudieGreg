@@ -30,7 +30,7 @@ public class Brauerei extends Standort {
 		return kosten;
 	}
 
-	public void setKosten(float kosten) {
+	public void setKosten(int kosten) {
 		this.kosten = kosten;
 	}
 	
