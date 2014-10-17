@@ -27,5 +27,13 @@ public class Supermarkt extends Standort{
 		this.maxpreis = maxpreis;
 	}
 	
+	public int angebot_machen(){
+		int menge;
+		
+		return menge;
+	}
 	
+	public Spieler angebot_auswerten(){
+		Spieler partner;
+	}
 }
